@@ -1,0 +1,76 @@
+<div class="outer">
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-2 col-lg-5 col-md-7 offsett-lg-4 offset-md-3">
+                <div class="panel border bg-white">
+                    <div class="panel-heading">
+                        <h3 class="pt-3 font-weight-bold">Sign Up</h3>
+                    </div>
+                    <div class="panel-body p-3">
+                        <form [formGroup]="signUpForm">
+                            <!--FirstName input-->
+                            <div class="form-group pt-3">
+                                <div class="input-field">
+                                    <span class="fa fa-user-circle p-2"></span> <!--icono de user¹-->
+                                    <input formControlName="firstName" type="text" placeholder="FirstName">
+                                </div>
+                            </div>
+                            <small *ngIf="signUpForm.controls['firstName'].dirty && signUpForm.hasError('required', 'firstName')" class="text-danger">*FirstName is required</small>
+                            <!--Lastname input-->
+                            <div class="form-group pt-3">
+                                <div class="input-field">
+                                    <span class="fa fa-user-circle-o p-2"></span> <!--icono de user¹-->
+                                    <input formControlName="lastName" type="text" placeholder="Lastname">
+                                </div>
+                            </div>
+                            <small *ngIf="signUpForm.controls['lastName'].dirty && signUpForm.hasError('required', 'lastName')" class="text-danger">*LastName is required</small>
+                            <!--Email input-->
+                            <div class="form-group pt-3">
+                                <div class="input-field">
+                                    <span class="fa fa-envelope p-2"></span> <!--icono de user¹-->
+                                    <input formControlName="email" type="text" placeholder="Email">
+                                </div>
+                            </div>
+                            <small *ngIf="signUpForm.controls['email'].dirty && signUpForm.hasError('required', 'email')" class="text-danger">*Email is required</small>
+                            <!--UserName input-->
+                            <div class="form-group pt-3">
+                                <div class="input-field">
+                                    <span class="fa fa-user p-2"></span> <!--icono de user¹-->
+                                    <input formControlName="userName" type="text" placeholder="Username">
+                                </div>
+                            </div>
+                            <small *ngIf="signUpForm.controls['userName'].dirty && signUpForm.hasError('required', 'userName')" class="text-danger">*UserName is required</small>
+                            <!--Password input-->
+                            <div class="form-group pt-3">
+                                <div class="input-field">
+                                    <span class="fa fa-lock p-2"></span> <!--icono de user¹ https://www.dpreview.com/files/p/articles/4698742202/facebook.jpge-->
+                                    <input formControlName="password" [type]="type" placeholder="Password">
+                                    <span (click)="hideShowPass()" class="fa {{eyeIcon}}"></span>
+                                </div>
+                            </div>
+                            <small *ngIf="signUpForm.controls['password'].dirty && signUpForm.hasError('required', 'password')" class="text-danger">*Password is required</small>
+                            <!--Confirm Password input-->
+                            <div class="form-group pt-3">
+                                <div class="input-field">
+                                    <span class="fa fa-lock p-2"></span> <!--icono de user¹ https://www.dpreview.com/files/p/articles/4698742202/facebook.jpge-->
+                                    <input formControlName="confirmPassword" [type]="type2" placeholder="Confirm password">
+                                    <span (click)="hideShowPass2()" class="fa {{eyeIcon2}}"></span>
+                                </div>
+                            </div>
+                            <small *ngIf="signUpForm.controls['confirmPassword'].dirty && signUpForm.hasError('required', 'confirmPassword')" class="text-danger">*Repeat your password please</small>                      
+                            <button type="submit" class="btn btn-secondary btn-block mt-4 w-100" style="background-color: #00cef5" (click)="onSingUp()">Sign up</button>
+                            <div class="text-center pt-4 text-muted">Already have an account? <a id="forget" routerLink="/login">LogIn</a></div>
+                        </form>
+                    </div>
+                    <!--<div class="mx-3 my-2 py-2 bordert">
+                        <div class="text-center py-3">
+                            <a href="https://www.facebook.com" target="_blank" class="px-2"><img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook"></a>
+                            <a href="https://www.github.com" target="_blank" class="px-2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt="GitHub"></a>
+                            <a href="https://www.youtube.com" target="_blank" class="px-2"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube"></a>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
