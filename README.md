@@ -1,6 +1,6 @@
 # AngularProject
-
-##Librerias usadas para el proyecto front-end
+***
+Librerias usadas para el proyecto front-end
 ***
 Sitio de npm para la instalación de extensiones -> https://www.npmjs.com/package/
 * @angular/common/http
