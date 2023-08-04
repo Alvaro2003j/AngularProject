@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\aplications\\front-end\\angular_auth\\AngularAuthAPI\\AngularAuthAPI\\AngularAuthAPI.csproj": {}
+    "D:\\git-section\\Nueva carpeta\\AngularProject\\angular_auth\\AngularAuthAPI\\AngularAuthAPI\\AngularAuthAPI.csproj": {}
   },
   "projects": {
-    "D:\\aplications\\front-end\\angular_auth\\AngularAuthAPI\\AngularAuthAPI\\AngularAuthAPI.csproj": {
+    "D:\\git-section\\Nueva carpeta\\AngularProject\\angular_auth\\AngularAuthAPI\\AngularAuthAPI\\AngularAuthAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\aplications\\front-end\\angular_auth\\AngularAuthAPI\\AngularAuthAPI\\AngularAuthAPI.csproj",
+        "projectUniqueName": "D:\\git-section\\Nueva carpeta\\AngularProject\\angular_auth\\AngularAuthAPI\\AngularAuthAPI\\AngularAuthAPI.csproj",
         "projectName": "AngularAuthAPI",
-        "projectPath": "D:\\aplications\\front-end\\angular_auth\\AngularAuthAPI\\AngularAuthAPI\\AngularAuthAPI.csproj",
+        "projectPath": "D:\\git-section\\Nueva carpeta\\AngularProject\\angular_auth\\AngularAuthAPI\\AngularAuthAPI\\AngularAuthAPI.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\aplications\\front-end\\angular_auth\\AngularAuthAPI\\AngularAuthAPI\\obj\\",
+        "outputPath": "D:\\git-section\\Nueva carpeta\\AngularProject\\angular_auth\\AngularAuthAPI\\AngularAuthAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

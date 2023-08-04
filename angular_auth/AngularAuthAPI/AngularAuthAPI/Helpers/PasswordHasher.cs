@@ -13,6 +13,7 @@ namespace AngularAuthAPI.Helpers
         private static readonly int HashSize = 20;
         private static readonly int Iterations = 10000;
         
+        //Encriptar password
         public static string hashPassword(string password)
         {
             byte[] salt;
@@ -28,6 +29,7 @@ namespace AngularAuthAPI.Helpers
             return base64Hash;
         }
 
+        //Desencriptar password
         public static bool verifyPassword(string password, string base64Hash)
         {
             var hashBytes = Convert.FromBase64String(base64Hash);
